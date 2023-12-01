@@ -115,14 +115,14 @@ GROUP BY c.customer_id;
 Задание 3*
 Самостоятельно изучите, какие типы индексов используются в PostgreSQL. Перечислите те индексы, которые используются в PostgreSQL, а в MySQL — нет.
 
-# В PostgreSQL:
+### В PostgreSQL:
 — B-дерево
 — Хеш-индекс
 — GiST (Generalized Inverted Storage Tree)
 — GIN (Generalized Inverted Index)
 — BRIN (Block Range INdex)
 — Bloom
-# В MySQL:
+### В MySQL:
 — B-дерево
 — Хеш-индекс
 — GiST
