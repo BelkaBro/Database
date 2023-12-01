@@ -16,5 +16,6 @@ mysqlsh -h localhost -u sys_temp -P 3306 < ./sakila-db/sakila-schema.sql mysqlsh
 
 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 
-![img](DDL_DML/img/268452287-0cf25caf-101d-4acd-9e86-6e260d4ea6e0.png)
+![img](https://github.com/BelkaBro/Database/blob/main/DDL_DML/img/268452287-0cf25caf-101d-4acd-9e86-6e260d4ea6e0.png)
+
 
