@@ -24,10 +24,15 @@ mysqlsh -h localhost -u sys_temp -P 3306 < ./sakila-db/sakila-schema.sql mysqlsh
 ![img](https://github.com/BelkaBro/Database/blob/main/DDL_DML/img/268452309-82cbec08-c9d4-4537-92ef-4b5b07ce19b8.png)
 
 1.6. Переподключитесь к базе данных от имени sys_temp.
+
 Для смены типа аутентификации с sha2 используйте запрос:
+
 ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
 1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
+
 1.7. Восстановите дамп в базу данных.
+
 1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 
 ER диаграмма в Dbeaver.
