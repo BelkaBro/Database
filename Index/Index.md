@@ -43,7 +43,7 @@ where date(p.payment_date) = '2005-07-30' and p.payment_date = r.rental_date and
                             -> Single-row covering index lookup on i using PRIMARY (inventory_id=r.inventory_id)  (cost=250e-6 rows=1) (actual time=0.00135..0.00199 rows=1 loops=642000)
 ```
 
-Старый вариант
+# Старый вариант
 
 Как понимаю данный запрос выдает платежи людей, взявших в аренду фильмы за определенную дату. И в запросе, на мой взгляд, много лишней информации: например, инвентаризация (inventory_id), дата аренды (rental_date), фильмы (film). Из-за чего исходный запрос у меня получился аж на 16615 милисекунд (16 сек) и прочитанных строк вышло 642000.
 
@@ -107,6 +107,4 @@ GROUP BY c.customer_id;
             -> Index lookup on p using day_of_payment (payment_date=r.rental_date), with index condition: ((cast(p.payment_date as date) >= '2005-07-30') and (cast(p.payment_date as date) < <cache>(('2005-07-30' + interval 1 day))))  (cost=0.254 rows=1.02) (actual time=0.00352..0.00357 rows=0.0412 loops=7694)
 ```
 
-![image](https://github.com/BelkaBro/Database/blob/main/Index/img/269170668-898e8418-59cd-49cc-a3c7-907566eb6bb8.png)
-
-
+![img](https://github.com/BelkaBro/Database/blob/main/Index/img/269170668-898e8418-59cd-49cc-a3c7-907566eb6bb8.png)
