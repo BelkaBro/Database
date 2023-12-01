@@ -116,16 +116,29 @@ GROUP BY c.customer_id;
 Самостоятельно изучите, какие типы индексов используются в PostgreSQL. Перечислите те индексы, которые используются в PostgreSQL, а в MySQL — нет.
 
 В PostgreSQL:
+
 — B-дерево
+
 — Хеш-индекс
+
 — GiST (Generalized Inverted Storage Tree)
+
 — GIN (Generalized Inverted Index)
+
 — BRIN (Block Range INdex)
+
 — Bloom
+
 В MySQL:
+
 — B-дерево
+
 — Хеш-индекс
+
 — GiST
+
 — GIN
+
 — BRIN
+
 Однако, MySQL поддерживает более широкий набор типов данных, чем PostgreSQL, включая DECIMAL, FLOAT и DOUBLE, а также поддерживает пользовательские типы данных. Кроме того, MySQL поддерживает индексы выражений и индексы по столбцам представлений.
