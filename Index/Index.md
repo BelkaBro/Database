@@ -9,7 +9,7 @@ select round (sum(index_length) / sum(data_length) * 100) as '% index'
 from INFORMATION_SCHEMA.TABLES;
 ```
 
-![image](https://github.com/Ivashka80/12_05_SQL_Index/assets/121082757/1e04c294-f9cb-499b-9a6b-4b6fff8ee6e6)
+![img](https://github.com/BelkaBro/Database/blob/main/Index/img/268876762-1e04c294-f9cb-499b-9a6b-4b6fff8ee6e6.png)
 
 # Задание 2
 
@@ -57,7 +57,7 @@ from payment p, customer c
 where date(p.payment_date) = '2005-07-30' and p.customer_id = c.customer_id;
 ```
 
-![image](https://github.com/Ivashka80/12_05_SQL_Index/assets/121082757/b5dfb42c-ac7a-4dba-bd63-20426147bd14)
+![img](https://github.com/BelkaBro/Database/blob/main/Index/img/268892838-b5dfb42c-ac7a-4dba-bd63-20426147bd14.png)
 
 В следствие чего анализ запроса получился уже другим: время 40 милисекунд и строк прочитано 634.
 ```
@@ -107,6 +107,6 @@ GROUP BY c.customer_id;
             -> Index lookup on p using day_of_payment (payment_date=r.rental_date), with index condition: ((cast(p.payment_date as date) >= '2005-07-30') and (cast(p.payment_date as date) < <cache>(('2005-07-30' + interval 1 day))))  (cost=0.254 rows=1.02) (actual time=0.00352..0.00357 rows=0.0412 loops=7694)
 ```
 
-![image](https://github.com/Ivashka80/12_05_SQL_Index/assets/121082757/898e8418-59cd-49cc-a3c7-907566eb6bb8)
+![image](https://github.com/BelkaBro/Database/blob/main/Index/img/269170668-898e8418-59cd-49cc-a3c7-907566eb6bb8.png)
 
 
