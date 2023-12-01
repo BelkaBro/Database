@@ -61,18 +61,31 @@ SELECT table_name, table_type, engine FROM information_schema.tables WHERE table
 Название таблицы | Название первичного ключа customer | customer_id
 
 select tab.table_schema as database_schema,
+
 sta.index_name as pk_name,
+
 sta.seq_in_index as column_id,
+
 sta.column_name,
+
 tab.table_name
+
 from information_schema.tables as tab
+
 inner join information_schema.statistics as sta
+
 on sta.table_schema = tab.table_schema
+
 and sta.table_name = tab.table_name
+
 and sta.index_name = 'primary'
+
 where tab.table_schema = 'sakila'
+
 and tab.table_type = 'BASE TABLE'
+
 order by tab.table_name,
+
 column_id;
 
 ![img](https://github.com/BelkaBro/Database/blob/main/DDL_DML/img/268453136-b99d5b34-2c42-4c2c-9bd6-6754634e04b1.png)
