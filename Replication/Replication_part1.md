@@ -45,7 +45,7 @@ relay-log      = /var/log/mysql/mysql-relay-bin.log
 
 `SHOW MASTER STATUS;`
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/c71d614f-7efc-47f1-ab5c-7bc40be68a91)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270578679-c71d614f-7efc-47f1-ab5c-7bc40be68a91.png)
 
 
 ### *Действия на Slave*
@@ -56,26 +56,26 @@ relay-log      = /var/log/mysql/mysql-relay-bin.log
 
 `SHOW REPLICA STATUS\G;`
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/32793fe0-b6fa-47d4-b822-5cd64401b8ea)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270579958-32793fe0-b6fa-47d4-b822-5cd64401b8ea.png)
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/b9e80de5-bc91-482c-a1dd-be63952a9b19)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270580090-b9e80de5-bc91-482c-a1dd-be63952a9b19.png)
 
 ### *Действия на Master*
 
 `SHOW DATABASES;`
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/e42a25c3-a852-4f71-937b-763d4c1d2f51)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270580623-e42a25c3-a852-4f71-937b-763d4c1d2f51.png)
 
 ### *Действия на Slave*
 
 `SHOW DATABASES;`
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/563bd37c-0935-4969-9d9c-5b83f94686c3)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270580771-563bd37c-0935-4969-9d9c-5b83f94686c3.png)
 
 ### *На Master создаю БД и проверяю*
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/eca81a36-24f2-4dde-818b-1a0f5171d22d)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270581337-eca81a36-24f2-4dde-818b-1a0f5171d22d.png)
 
 ### *Проверяю репликацию на Slave, база появилась*
 
-![image](https://github.com/Ivashka80/12-06_Repl_p1/assets/121082757/0d76cf7b-dcff-4f9f-bddb-c43bb7016638)
+![img](https://github.com/BelkaBro/Database/blob/main/Replication/img/270581404-0d76cf7b-dcff-4f9f-bddb-c43bb7016638.png)
